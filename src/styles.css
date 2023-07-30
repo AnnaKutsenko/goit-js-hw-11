@@ -1,0 +1,68 @@
+body {
+  text-align: center;
+}
+
+input{
+margin-bottom: 20px;
+padding: 4px 100px;
+text-align: center;
+}
+
+p {
+  margin: 0;
+}
+
+.search-form button {
+  padding: 4px 6px;
+  background-color: rgb(58, 58, 231);
+  color: white;
+  border-color: rgb(58, 58, 231);
+}
+
+.photo-card a {
+text-decoration: none;
+}
+
+.photo-card img {
+  height: 200px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.gallery {
+  display: grid;
+  max-width: 1140px;
+  grid-template-columns: repeat(auto-fit, minmax(276px, 1fr));
+  grid-auto-rows: 240px;
+  grid-gap: 12px;
+  justify-content: center;
+  padding: 0;
+  list-style: none;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.info {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.info-item {
+  display: block;
+  justify-content: center;
+  font-size: 13px;
+}
+
+.load-more {
+  font-weight: 400;
+  line-height: 1.5;
+  color: black;
+  cursor: pointer;
+  background-color: #198d69ad;
+  border: none;
+  padding: 12px;
+  font-size: 15px;
+  border-radius: 10;
+  margin-top: 20px;
+}
