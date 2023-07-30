@@ -29,14 +29,19 @@ async function handlerSearch(evt) {
       if (arr.length === 0) {
         Notiflix.Notify.info("Sorry, there are no images matching your search query. Please try again.")
       } else {
+        page = 1;
         Notiflix.Notify.info(`Hooray! We found ${totalPhoto} images.`) 
         gallery.insertAdjacentHTML('beforeend', createMarkupImg(arr))
         simpleLightbox.refresh();
         loadBtn.hidden = false;
       }
     })
+  } catch (error) {
+    console.log(error.message)
   }
-  catch (error) { console.log(error.message) }
+  // finally {
+  //   evt.target.reset()
+  // }
 }
 
 async function onClick() {
